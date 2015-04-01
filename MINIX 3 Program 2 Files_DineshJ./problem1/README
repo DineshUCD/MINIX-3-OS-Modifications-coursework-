@@ -1,0 +1,1 @@
+cc -D_POSIX_SOURCE -o test42 test42.c
