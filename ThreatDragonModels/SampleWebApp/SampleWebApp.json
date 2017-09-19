@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "SampleWebApp",
+    "owner": "Dinesh",
+    "description": "Another sample model"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "WebTM",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "Dinesh"
+  }
+}
