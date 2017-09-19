@@ -10,7 +10,199 @@
       {
         "title": "WebTM",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 34,
+                "y": 101
+              },
+              "angle": 0,
+              "id": "b9143e3d-721e-4215-889e-7a2ec7e9d589",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 627,
+                "y": 99
+              },
+              "angle": 0,
+              "id": "08a460b9-6aa1-488c-8f96-1f58f12ebf46",
+              "z": 2,
+              "hasOpenThreats": false,
+              "storesCredentials": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "DB"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 355,
+                "y": 88
+              },
+              "angle": 0,
+              "id": "e9fd91f1-2e74-4863-b8d8-a17eb7449be1",
+              "z": 3,
+              "hasOpenThreats": false,
+              "outOfScope": false,
+              "privilegeLevel": "HIGH",
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Login"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b9143e3d-721e-4215-889e-7a2ec7e9d589"
+              },
+              "target": {
+                "id": "e9fd91f1-2e74-4863-b8d8-a17eb7449be1"
+              },
+              "vertices": [
+                {
+                  "x": 275,
+                  "y": 137
+                }
+              ],
+              "id": "a90003af-bf2f-4190-a1cd-743edc1a7da6",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Logs in",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "e9fd91f1-2e74-4863-b8d8-a17eb7449be1"
+              },
+              "target": {
+                "id": "08a460b9-6aa1-488c-8f96-1f58f12ebf46"
+              },
+              "vertices": [
+                {
+                  "x": 542,
+                  "y": 139
+                }
+              ],
+              "id": "e52fb536-5a91-4330-934f-0316bbb42da6",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Get credentials",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 276,
+                "y": 38
+              },
+              "target": {
+                "x": 277,
+                "y": 262
+              },
+              "vertices": [
+                {
+                  "x": 315,
+                  "y": 33
+                },
+                {
+                  "x": 313,
+                  "y": 108
+                }
+              ],
+              "id": "11cd3217-fcfd-4aa8-a37a-4c61f6f64daf",
+              "z": 7,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 1101.1239013671875
+        }
       }
     ],
     "reviewer": "Dinesh"
